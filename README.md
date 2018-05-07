@@ -1,5 +1,3 @@
-# Project Title
-
-Add a description for this project here.
+# RNA Expression Analysis
 
 Shareable Project powered by <https://spro.io>
