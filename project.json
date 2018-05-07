@@ -1,0 +1,20 @@
+{
+  "name": "RNA Expression Analysis",
+  "description": "RNA Expression Analysis Template",
+  "git_url": "https://github.com/UCSD-CCAL/rna_expression_analysis",
+  "version": "1.1.0",
+  "keywords": [
+    "Differential Expressioion",
+    "Differential Gene Expression",
+    "Gene Set Enrichment Analysis",
+    "RNA-Seq",
+    "GSEA"
+  ],
+  "downloads": {},
+  "commands": {},
+  "environment_history": [
+    "conda install --prefix PROJECT_ENVIRONMENT_DIRECTORY_PATH --channel conda-forge --yes --quiet jupyter yapf click pandas hdf5 pytables scikit-learn scipy statsmodels matplotlib plotly pycrypto bcrypt biopython rpy2 r-mass",
+    "conda install --prefix PROJECT_ENVIRONMENT_DIRECTORY_PATH --channel makman09 --yes --quiet pytabix",
+    "pip install --quiet ccal"
+  ]
+}
