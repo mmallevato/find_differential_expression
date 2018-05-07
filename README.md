@@ -1,5 +1,5 @@
 # RNA Expression Analysis
 
-Analyze RNA expression :notes:
+Analyze RNA expression :fire:
 
 Shareable Project powered by <https://spro.io>
