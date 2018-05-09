@@ -43,6 +43,7 @@ def make_match_panels(target_x_sample, feature_x_sample, n_job,
         scores = ccal.make_match_panel(
             target,
             feature_x_sample,
+            target_ascending=True,
             scores=scores,
             n_job=n_job,
             extreme_feature_threshold=extreme_feature_threshold,
