@@ -1,0 +1,4 @@
+	NC1_tpm	NC2_tpm	NC3_tpm	NM1_tpm	NM2_tpm	NM3_tpm	WC1_tpm	WC2_tpm	WC3_tpm	WM1_tpm	WM2_tpm	WM3_tpm
+NC vs NM	0	0	0	1	1	1	-1	-1	-1	-1	-1	-1
+WC vs WM	-1	-1	-1	-1	-1	-1	0	0	0	1	1	1
+C vs M	0	0	0	1	1	1	0	0	0	1	1	1
