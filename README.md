@@ -1,5 +1,5 @@
-# RNA Expression Analysis
+# Find Differential Expressions
 
-Analyze RNA expression :fire:
+Find Differential Expressions :fire:
 
 Shareable Project powered by <https://spro.io>
