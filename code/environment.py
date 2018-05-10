@@ -47,8 +47,8 @@ def make_match_panels(target_x_sample, feature_x_sample, n_job,
             extreme_feature_threshold=extreme_feature_threshold,
             n_sampling=n_sampling,
             n_permutation=n_permutation,
-            title=title,
             target_type=target_type,
+            title=title,
             file_path_prefix=file_path_prefix)
 
         common_indices = feature_x_sample.index & scores.index & set(to_peek)
@@ -58,8 +58,9 @@ def make_match_panels(target_x_sample, feature_x_sample, n_job,
             ccal.make_match_panel(
                 target,
                 feature_x_sample.loc[common_indices],
-                scores=scores.loc[common_indices],
                 target_ascending=True,
+                scores=scores.loc[common_indices],
                 extreme_feature_threshold=None,
+                target_type=target_type,
                 title=title,
-                target_type=target_type)
+                file_path_prefix='{}.peek'.format(file_path_prefix))
