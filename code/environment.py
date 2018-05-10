@@ -1,12 +1,12 @@
 import os
 
-import pandas as pd
 import ccal
+import pandas as pd
 
 
 def make_match_panels(target_x_sample, feature_x_sample, n_job,
-                      extreme_feature_threshold, to_peek, title_prefix,
-                      directory_path):
+                      extreme_feature_threshold, n_sampling, n_permutation,
+                      to_peek, title_prefix, directory_path):
 
     for index, target in target_x_sample.iterrows():
 
@@ -45,6 +45,8 @@ def make_match_panels(target_x_sample, feature_x_sample, n_job,
             scores=scores,
             n_job=n_job,
             extreme_feature_threshold=extreme_feature_threshold,
+            n_sampling=n_sampling,
+            n_permutation=n_permutation,
             title=title,
             target_type=target_type,
             file_path_prefix=file_path_prefix)
@@ -57,6 +59,7 @@ def make_match_panels(target_x_sample, feature_x_sample, n_job,
                 target,
                 feature_x_sample.loc[common_indices],
                 scores=scores.loc[common_indices],
+                target_ascending=True,
                 extreme_feature_threshold=None,
                 title=title,
                 target_type=target_type)

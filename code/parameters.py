@@ -26,11 +26,15 @@ GENES_TO_PEEK = (
     'TEAD4',
     'WWC1',
     'WWTR1',
-    'YAP1', )
+    'YAP1',
+)
 
 GENE_SETS_TO_PEEK = ()
 
-GENE_SET_KEYWORDS = ('yap', 'hippo', )
+GENE_SET_KEYWORDS = (
+    'yap',
+    'hippo',
+)
 
 N_JOB = 2
 
