@@ -5,9 +5,15 @@ import numpy as np
 import pandas as pd
 
 
-def make_match_panels(target_x_sample, feature_x_sample, n_job,
-                      extreme_feature_threshold, n_sampling, n_permutation,
-                      title_prefix, directory_path):
+def make_match_panels(target_x_sample,
+                      feature_x_sample,
+                      n_job,
+                      extreme_feature_threshold,
+                      n_sampling,
+                      n_permutation,
+                      title_prefix,
+                      directory_path,
+                      reset=False):
 
     for index, target in target_x_sample.iterrows():
 
@@ -19,7 +25,7 @@ def make_match_panels(target_x_sample, feature_x_sample, n_job,
 
         scores_file_path = '{}.tsv'.format(file_path_prefix)
 
-        if os.path.isfile(scores_file_path):
+        if not reset and os.path.isfile(scores_file_path):
 
             scores = pd.read_table(scores_file_path, index_col=0)
 
