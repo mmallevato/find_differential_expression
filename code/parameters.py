@@ -50,12 +50,6 @@ GENES_TO_PEEK = (
     'CD133',
 )
 
-GENE_SETS_TO_PEEK = ()
+GENE_SETS_TO_PEEK = ('stem', )
 
-GENE_SET_KEYWORDS = ('stem', )
-
-N_JOB = 8
-
-GSEA_NORMALIZATION_METHOD = '0-1'
-
-GSEA_STATISTIC = 'auc'
+GENE_SET_KEYWORDS_TO_PEEK = ('_stem_', ' stem ')
