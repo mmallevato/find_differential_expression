@@ -1,8 +1,8 @@
 {
-  "name": "Find Differential Expressions",
-  "description": "Find Differential Expressions",
-  "git_url": "https://github.com/UCSD-CCAL/find_differential_expressions",
-  "version": "0.0.9",
+  "name": "Find Differential Expression",
+  "description": "Find Differential Expression",
+  "git_url": "https://github.com/UCSD-CCAL/find_differential_expression",
+  "version": "0.0.10",
   "keywords": [],
   "downloads": {},
   "commands": {},
