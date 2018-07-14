@@ -34,11 +34,13 @@ def make_match_panels(target_x_sample,
 
             scores = None
 
-        if target.unique().size == 2:
+        n_target_unique_value = target.unique().size
+
+        if n_target_unique_value == 2:
 
             target_type = 'binary'
 
-        elif 2 < target.unique().size:
+        elif 2 < n_target_unique_value:
 
             target_type = 'categorical'
 
