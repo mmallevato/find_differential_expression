@@ -24,7 +24,10 @@ GENES_TO_PEEK = (
 
 GENE_SETS_TO_PEEK = ('stem', )
 
-GENE_SET_KEYWORDS_TO_PEEK = ('_stem_', ' stem ')
+GENE_SET_KEYWORDS_TO_PEEK = (
+    '_stem_',
+    ' stem ',
+)
 
 N_JOB = 1
 
