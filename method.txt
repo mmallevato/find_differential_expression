@@ -1,0 +1,30 @@
+Method:
+
+Sequenced reads were mapped to the reference transcript sequences to compute the transcript abundance as transcripts per kilobase million (TPM).
+In this process, the Computational Cancer Analysis Library (CCAL), which uses 'Kallisto', and GRCh38 reference transcript sequence from Ensembl were used.
+The expression value for a gene was then set as the maximum TPM of the transcripts mapped to the gene, where Biomart from Ensembl was used to map transcript IDs to gene symbols.
+The expression value for a gene set from the Molecular Signatures Database (MSigDB) was computed using Gene Set Enrichment Analysis from the CCAL.
+Differential gene and gene set expression analyses were performed using the CCAL.
+The workflow from the sequenced reads stored as FASTQ files to performing the differential expression analyses is a Jupyter Notebook based Shareable Project.
+
+Citation:
+
+CCAL: https://github.com/UCSD-CCAL/ccal
+
+Kallisto: https://pachterlab.github.io/kallisto
+
+Ensembl GRCh38 cDNA reference sequence: ftp://ftp.ensembl.org/pub/release-93/fasta/homo_sapiens/cds/Homo_sapiens.GRCh38.cds.all.fa.gz
+
+Ensembl Biomart: http://uswest.ensembl.org/biomart/martview/25881b5fd2dcacc7162cbdcf10469f67
+
+Shareable Project: https://spro.io
+
+Find Differential Expression Shareable Project: https://github.com/UCSD-CCAL/find_differential_expression
+
+Gene set enrichment analysis: A knowledge-based approach for interpreting genome-wide expression profiles
+Aravind Subramanian, Pablo Tamayo, Vamsi K. Mootha, Sayan Mukherjee, Benjamin L. Ebert, Michael A. Gillette, Amanda Paulovich, Scott L. Pomeroy, Todd R. Golub, Eric S. Lander, Jill P. Mesirov
+Proceedings of the National Academy of Sciences Oct 2005, 102 (43) 15545-15550; DOI: 10.1073/pnas.0506580102
+
+Molecular signatures database (MSigDB) 3.0
+Arthur Liberzon, Aravind Subramanian, Reid Pinchback, Helga Thorvaldsdóttir, Pablo Tamayo, Jill P. Mesirov
+Bioinformatics, Volume 27, Issue 12, 15 June 2011, Pages 1739–1740
