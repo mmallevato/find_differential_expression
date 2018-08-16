@@ -4,17 +4,15 @@ from ccal import make_match_panel
 from pandas import read_table
 
 
-def make_match_panels(
-    target_x_sample,
-    feature_x_sample,
-    n_job,
-    extreme_feature_threshold,
-    n_sampling,
-    n_permutation,
-    title_prefix,
-    directory_path,
-    reset=False,
-):
+def make_match_panels(target_x_sample,
+                      feature_x_sample,
+                      n_job,
+                      extreme_feature_threshold,
+                      n_sampling,
+                      n_permutation,
+                      title_prefix,
+                      directory_path,
+                      reset=False):
 
     for index, target in target_x_sample.iterrows():
 
@@ -22,19 +20,13 @@ def make_match_panels(
 
         target = target[target != -1]
 
-        file_path_prefix = '{}/{}'.format(
-            directory_path, 
-            index,
-        )
+        file_path_prefix = '{}/{}'.format(directory_path, index)
 
         scores_file_path = '{}.tsv'.format(file_path_prefix)
 
         if not reset and isfile(scores_file_path):
 
-            scores = read_table(
-                scores_file_path, 
-                index_col=0,
-            )
+            scores = read_table(scores_file_path, index_col=0)
 
             scores = scores.loc[feature_x_sample.index]
 
@@ -42,20 +34,15 @@ def make_match_panels(
 
             scores = None
 
-        n_target_unique_value = target.unique().size
-
-        if n_target_unique_value == 2:
+        if target.unique().size == 2:
 
             target_type = 'binary'
 
-        elif 2 < n_target_unique_value:
+        elif 2 < target.unique().size:
 
             target_type = 'categorical'
 
-        title = '{}{}'.format(
-            title_prefix, 
-            index,
-        )
+        title = '{}{}'.format(title_prefix, index)
 
         make_match_panel(
             target,
@@ -68,5 +55,4 @@ def make_match_panels(
             n_permutation=n_permutation,
             target_type=target_type,
             title=title,
-            file_path_prefix=file_path_prefix,
-        )
+            file_path_prefix=file_path_prefix)
