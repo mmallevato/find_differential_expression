@@ -1,5 +1,5 @@
 # Find Differential Expression
 
-Find differential expression :fire:
+Workflow to find differential expression :fire:
 
 Shareable Project powered by <https://spro.io>
