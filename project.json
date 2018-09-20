@@ -1,10 +1,10 @@
 {
-  "name": "Find Differential Expression",
-  "description": "",
-  "git_url": "https://github.com/KwatME/find_differential_expression",
-  "version": "0.1.1",
-  "keywords": [],
-  "downloads": {},
-  "commands": {},
-  "environment_history": []
+	"name": "Find Differential Expression",
+	"description": "",
+	"git_url": "https://github.com/KwatME/find_differential_expression",
+	"version": "0.1.1",
+	"keywords": [],
+	"downloads": {},
+	"commands": {},
+	"environment_history": []
 }
