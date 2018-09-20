@@ -2,7 +2,11 @@
   "name": "Find Differential Expression",
   "description": "",
   "git_url": "https://github.com/KwatME/find_differential_expression",
+<<<<<<< HEAD
   "version": "0.1.1",
+=======
+  "version": "0.2.1",
+>>>>>>> b23ea3b4b6382342223b6632fe0027424fbd6c54
   "keywords": [],
   "downloads": {},
   "commands": {},
