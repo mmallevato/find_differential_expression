@@ -5,8 +5,8 @@ from warnings import filterwarnings
 import ccal
 import numpy as np
 import pandas as pd
-from plotly.offline import init_notebook_mode
+import plotly as pl
 
 filterwarnings('ignore')
 
-init_notebook_mode(connected=True)
+pl.offline.init_notebook_mode(connected=True)
