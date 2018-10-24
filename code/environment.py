@@ -1,3 +1,4 @@
+import itertools
 import os
 from pprint import pprint
 from warnings import filterwarnings
