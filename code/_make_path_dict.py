@@ -8,7 +8,7 @@ def _make_path_dict():
     gene_set_directory_path = '../data/gene_set'
 
     path_dict = dict(
-        enst_file_path='../data/enst.tsv',
+        enst_gene_name_file_path='../data/enst_gene_name.tsv',
         sample_id_sample_name_file_path='../data/sample_id_sample_name.tsv',
         gene_set_directory_path='../data/gene_set',
         kallisto_directory_path='../output/kallisto',
