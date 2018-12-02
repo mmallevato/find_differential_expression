@@ -6,6 +6,6 @@ import numpy as np
 import pandas as pd
 import plotly as pl
 
-filterwarnings('ignore')
+filterwarnings("ignore")
 
 pl.offline.init_notebook_mode(connected=True)
