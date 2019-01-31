@@ -31,7 +31,7 @@ enst_gene_name_file_path:                         ../data/enst_gene_name.mouse.t
 gene_set_directory_path:                          ../data/gene_set
 
 # ==============================================================================
-output_directory_path:                            ~/mike_output
+output_directory_path:                            /home/kwatme/mike_output
 
 # ==============================================================================
 plot_heat_map_max_size:                           240000
@@ -41,7 +41,7 @@ plot_cluster_max_size:                            2400
 plot_std:                                         2.4
 
 # ==============================================================================
-n_job:                                            32
+n_job:                                            16
 
 # ==============================================================================
 features_to_drop:
