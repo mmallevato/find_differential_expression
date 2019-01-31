@@ -31,7 +31,7 @@ enst_gene_name_file_path:                         ../data/enst_gene_name.mouse.t
 gene_set_directory_path:                          ../data/gene_set
 
 # ==============================================================================
-output_directory_path:                            ../output
+output_directory_path:                            ~/mike_output
 
 # ==============================================================================
 plot_heat_map_max_size:                           240000
