@@ -1,0 +1,95 @@
+# ==============================================================================
+fastqs:
+  4MOSC1BloodCD8-1_S16:
+    -
+  4MOSC1BloodCD8-2_S17:
+    -
+  4MOSC1BloodCD8-3_S18:
+    -
+  4MOSC1TumorCD8-1_S4:
+    -
+  4MOSC1TumorCD8-2_S5:
+    -
+  4MOSC1TumorCD8-3_S6:
+    -
+  4MOSC3BloodCD8-1_S13:
+    -
+  4MOSC3BloodCD8-2_S1:
+    -
+  4MOSC3BloodCD8-3_S15:
+    -
+  4MOSC3TumorCD8-1_S1:
+    -
+  4MOSC3TumorCD8-2_S2:
+    -
+  4MOSC3TumorCD8-3_S3:
+    -
+
+# ==============================================================================
+reference_cdna_fasta_file_path:                   ../data/Homo_sapiens.GRCh38.cdna.all.fa.gz
+enst_gene_name_file_path:                         ../data/enst_gene_name.mouse.tsv
+gene_set_directory_path:                          ../data/gene_set
+
+# ==============================================================================
+output_directory_path:                            ../output
+
+# ==============================================================================
+plot_heat_map_max_size:                           240000
+plot_distributions_max_size:                      24000
+plot_rug_max_size:                                2400
+plot_cluster_max_size:                            2400
+plot_std:                                         2.4
+
+# ==============================================================================
+n_job:                                            32
+
+# ==============================================================================
+features_to_drop:
+samples_to_drop:
+nanize:
+drop_axis:
+max_na: 
+min_n_not_na_unique_value:
+shift_as_necessary_to_achieve_min_before_logging: 0<
+log_base:                                         2
+normalization_axis:
+normalization_method:
+clip_min:
+clip_max:
+
+# ==============================================================================
+genes_to_peek:
+  - CD4
+  - CD8
+
+# ==============================================================================
+gene_sets_to_peek:
+  - HALLMARK_INFLAMMATORY_RESPONSE
+  - Cancer Stem Cell
+  - BENPORATH_ES_CORE_NINE
+  - BENPORATH_ES_WITH_H3K27ME3
+  - HOEBEKE_LYMPHOID_STEM_CELL_UP
+  - IVANOVA_HEMATOPOIESIS_STEM_CELL_AND_PROGENITOR
+  - MIKKELSEN_IPS_LCP_WITH_H3K4ME3
+  - MIKKELSEN_IPS_WITH_HCP_H3K27ME3
+  - GOTZMANN_EPITHELIAL_TO_MESENCHYMAL_TRANSITION_UP
+  - HALLMARK_NOTCH_SIGNALING
+  - HALLMARK_TGF_BETA_SIGNALING
+  - HALLMARK_E2F_TARGETS
+  - HALLMARK_WNT_BETA_CATENIN_SIGNALING
+  - BIOCARTA_WNT_PATHWAY
+  - PRC2_EZH2_UP.V1_UP
+  - E2F3_UP.V1_UP
+  - HINATA_NFKB_TARGETS_KERATINOCYTE_UP
+  - TIAN_TNF_SIGNALING_VIA_NFKB
+  - RODRIGUES_THYROID_CARCINOMA_POORLY_DIFFERENTIATED_UP
+  - RODRIGUES_THYROID_CARCINOMA_POORLY_DIFFERENTIATED_DN
+  - MA_MYELOID_DIFFERENTIATION_UP
+  - ADDYA_ERYTHROID_DIFFERENTIATION_BY_HEMIN
+
+# ==============================================================================
+target_ascending:
+n_extreme:                                        24
+n_sampling:                                       10
+n_permutation:                                    10
+target_type:                                      binary
