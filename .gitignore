@@ -6,6 +6,7 @@
 # package.json so spro can get them.
 # ==============================================================================
 data/*
+output/*
 
 # ==============================================================================
 # Do not track environment files because spro manages environment/.
@@ -32,6 +33,7 @@ environment/*
 # Additional rules.
 # ==============================================================================
 !data/gene_set
+!data/enst_gene_name.*.tsv
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

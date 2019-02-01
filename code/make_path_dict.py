@@ -9,6 +9,7 @@ def make_path_dict(setting):
 
     for name in (
         "kallisto/",
+        "enst_x_sample.tsv",
         "gene_x_sample.processed.tsv",
         "target_x_sample.tsv",
         "differentially_expressed_gene/",
@@ -16,7 +17,7 @@ def make_path_dict(setting):
         "differentially_expressed_gene_set/",
         "hill_plot/",
         "expanded_gene_set/",
-        "highlight/",
+        "summary/",
         "mountain_plot/",
     ):
 

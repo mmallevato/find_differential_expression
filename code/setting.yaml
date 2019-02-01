@@ -26,12 +26,12 @@ fastqs:
     -
 
 # ==============================================================================
-reference_cdna_fasta_file_path:                   ../data/Homo_sapiens.GRCh38.cdna.all.fa.gz
+reference_cdna_fasta_file_path:                   ../data/TODO.cdna.all.fa.gz
 enst_gene_name_file_path:                         ../data/enst_gene_name.mouse.tsv
 gene_set_directory_path:                          ../data/gene_set
 
 # ==============================================================================
-output_directory_path:                            /home/kwatme/mike_output
+output_directory_path:                            ../output
 
 # ==============================================================================
 plot_heat_map_max_size:                           240000
@@ -41,7 +41,7 @@ plot_cluster_max_size:                            2400
 plot_std:                                         2.4
 
 # ==============================================================================
-n_job:                                            16
+n_job:                                            1
 
 # ==============================================================================
 features_to_drop:
@@ -60,7 +60,10 @@ clip_max:
 # ==============================================================================
 genes_to_peek:
   - CD4
-  - CD8
+  - CD8A
+  - CD8B1
+  - F2RL1
+  - ST14
 
 # ==============================================================================
 gene_sets_to_peek:
@@ -88,8 +91,6 @@ gene_sets_to_peek:
   - ADDYA_ERYTHROID_DIFFERENTIATION_BY_HEMIN
 
 # ==============================================================================
-target_ascending:
-n_extreme:                                        24
+n_extreme:                                        32
 n_sampling:                                       10
 n_permutation:                                    10
-target_type:                                      binary
